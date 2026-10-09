@@ -1,0 +1,10 @@
+email,name,title,role,team,region,segment,manager_email,slack_user_id
+sam.rivera@example.com,Sam Rivera,RVP Sales,manager,Enterprise West,AMER,Enterprise,,
+priya.shah@example.com,Priya Shah,Sales Manager,manager,Commercial East,AMER,Commercial,,
+jordan.lee@example.com,Jordan Lee,Account Executive,learner,Enterprise West,AMER,Enterprise,sam.rivera@example.com,
+alex.kim@example.com,Alex Kim,Solutions Engineer,learner,Enterprise West,AMER,Enterprise,sam.rivera@example.com,
+morgan.chen@example.com,Morgan Chen,Account Executive,learner,Commercial East,AMER,Commercial,priya.shah@example.com,
+taylor.nguyen@example.com,Taylor Nguyen,Account Executive,learner,Commercial East,AMER,Commercial,priya.shah@example.com,
+casey.obrien@example.com,Casey O'Brien,Solutions Engineer,learner,Commercial East,AMER,Commercial,priya.shah@example.com,
+lena.muller@example.com,Lena Müller,Account Executive,learner,DACH,EMEA,Enterprise,,
+ravi.patel@example.com,Ravi Patel,Customer Success Manager,learner,APJ Strategic,APJ,Strategic,,

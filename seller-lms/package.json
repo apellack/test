@@ -1,0 +1,20 @@
+{
+  "name": "hashicorp-seller-lms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Internal LMS for HashiCorp sellers: user import, learning plans, assignments, progress tracking, Slack integration.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning --watch src/server.js",
+    "seed": "node --disable-warning=ExperimentalWarning scripts/seed.js",
+    "reminders": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning scripts/send-reminders.js",
+    "test": "node --disable-warning=ExperimentalWarning --test 'test/**/*.test.js'"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

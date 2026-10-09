@@ -1,0 +1,25 @@
+# Create the Slack app from this manifest: https://api.slack.com/apps -> Create New App -> From a manifest.
+# Replace https://lms.example.com with the public URL of the LMS.
+display_information:
+  name: Seller Academy
+  description: Learning plans and reminders for the sales team
+features:
+  bot_user:
+    display_name: Seller Academy
+    always_online: true
+  slash_commands:
+    - command: /learn
+      url: https://lms.example.com/slack/commands
+      description: See your open learning and mark items complete
+      usage_hint: "[help]"
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - commands
+      - users:read
+      - users:read.email
+settings:
+  interactivity:
+    is_enabled: true
+    request_url: https://lms.example.com/slack/interactions
